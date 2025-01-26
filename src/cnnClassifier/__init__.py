@@ -1,6 +1,7 @@
 import os
 import sys
 import logging
+from cnnClassifier.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH
 
 logging_str = "[%(asctime)s] %(levelname)s %(name)s - %(message)s"
 log_dir = "logs"
@@ -17,3 +18,8 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger("cnnClassifierLogger")
+
+__all__ = [
+    "CONFIG_FILE_PATH",
+    "PARAMS_FILE_PATH"
+]
